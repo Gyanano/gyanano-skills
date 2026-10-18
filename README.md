@@ -14,7 +14,7 @@ Three principles for AI-assisted project execution:
 2. **Search Before Building** — understand existing solutions before inventing new ones.
 3. **Expertise-Calibrated Agency** — adjust assistant initiative to the user's expertise in the current domain.
 
-Use it for engineering, product, research, or unfamiliar-domain tasks where the assistant must balance completeness, reuse of existing knowledge, and autonomy.
+Use it for engineering, product, research, or unfamiliar-domain tasks where the assistant must balance completeness, reuse of existing knowledge, and autonomy. [`adaptive-builder-core/README.md`](adaptive-builder-core/README.md) covers the three expertise modes and the decision and question policy in full.
 
 ### [`controlled-chinese`](controlled-chinese/SKILL.md)
 
@@ -38,7 +38,8 @@ The skill ships its own MIT license — see [`controlled-chinese/LICENSE`](contr
 gyanano-skills/
 ├── README.md
 ├── adaptive-builder-core/
-│   └── SKILL.md
+│   ├── SKILL.md
+│   └── README.md
 └── controlled-chinese/
     ├── SKILL.md
     ├── README.md
@@ -61,8 +62,11 @@ Copy the skill directory into your agent's skills folder:
 <skills-dir>/
   adaptive-builder-core/
     SKILL.md
+    README.md
   controlled-chinese/
     SKILL.md
+    README.md
+    LICENSE
     references/
     scripts/
     examples/
