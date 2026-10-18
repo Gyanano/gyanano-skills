@@ -30,20 +30,18 @@ Two modes: **execution** (all three layers, hard limits) and **reading** (layers
 
 `scripts/zh-lint.py` is a deterministic, stdlib-only linter with `--selftest`: it flags semicolon-chained actions, half-width punctuation, empty time / condition / quantity / subject words, empty verbs, jargon, boilerplate, double negation, obligation-word rotation, unstated range boundaries, mixed time units, over-long sentences, comma chains, subjectless status sentences, agentless 「被」 sentences, stacked 「的」 chains, synonym rotation, and list items that stop mid-thought. It never flags modality. [`controlled-chinese/README.md`](controlled-chinese/README.md) has before/after pairs, install steps, and the checks the linter deliberately does not perform.
 
-The skill ships its own MIT license — see [`controlled-chinese/LICENSE`](controlled-chinese/LICENSE).
-
 ## Repository layout
 
 ```
 gyanano-skills/
 ├── README.md
+├── LICENSE
 ├── adaptive-builder-core/
 │   ├── SKILL.md
 │   └── README.md
 └── controlled-chinese/
     ├── SKILL.md
     ├── README.md
-    ├── LICENSE
     ├── references/
     │   ├── rules.md
     │   └── lexicon.md
@@ -66,10 +64,13 @@ Copy the skill directory into your agent's skills folder:
   controlled-chinese/
     SKILL.md
     README.md
-    LICENSE
     references/
     scripts/
     examples/
 ```
 
 The agent reads only `name` and `description` at startup, and loads the rest of `SKILL.md` when the skill is triggered. Supporting files are read only when `SKILL.md` points to them.
+
+## License
+
+MIT — see [LICENSE](LICENSE). The license covers the whole repository, so no skill directory carries its own copy.

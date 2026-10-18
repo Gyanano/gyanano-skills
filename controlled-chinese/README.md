@@ -139,4 +139,4 @@ controlled-chinese/
 
 ## License
 
-MIT —— 见 [LICENSE](LICENSE)。
+MIT —— 见仓库根目录的 [LICENSE](../LICENSE)。
